@@ -1,0 +1,90 @@
+.navbar {
+  background: linear-gradient(135deg, #d7a8b8, #b99db6); /* Gradient navbar */
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align items horizontally */
+}
+
+.navbar ul li {
+  cursor: pointer;
+  padding: 10px 16px; /* Increased padding for better touch targets */
+  margin-right: 10px;
+  background-color: #f5bed1; /* Lighter shade of header color */
+  color: #671cb7;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  font-size: 25px; /* Adjusted font size */
+}
+
+.navbar ul li:hover {
+  background-color: #af6f89; /* Darker shade on hover */
+}
+
+.navbar ul li input[type="text"] {
+  padding: 6px;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+.navbar ul li input[type="text"]::placeholder {
+  color: #b94343;
+  opacity: 0.8;
+}
+
+.delete-button {
+  margin-left: 5px;
+  background-color: #b9769f;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px; /* Increased padding */
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px; /* Adjusted font size */
+}
+
+.delete-button:hover {
+  background-color: #cebfbe;
+}
+
+.confirmation-dialog {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; /* Ensure it appears above other content */
+}
+
+.confirmation-dialog p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.confirmation-dialog button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  background-color: #cf8282; /* Red color for buttons */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.confirmation-dialog button:hover {
+  background-color: #a75f5f; /* Darker shade on hover */
+}
